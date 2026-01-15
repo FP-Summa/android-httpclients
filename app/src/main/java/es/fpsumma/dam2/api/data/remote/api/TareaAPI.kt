@@ -1,6 +1,8 @@
 package es.fpsumma.dam2.api.data.remote.api
 
+import es.fpsumma.dam2.api.data.remote.dto.TareaCreateRequestDTO
 import es.fpsumma.dam2.api.data.remote.dto.TareaDTO
+import es.fpsumma.dam2.api.data.remote.dto.TareaUpdateRequestDTO
 import retrofit2.Response
 import retrofit2.http.*
 

@@ -48,7 +48,7 @@ fun NuevaTareaScreen(
         vm.addTarea(titulo, descripcion)
         titulo = ""
         descripcion = ""
-        navController.navigate(Routes.TAREA_LISTADO)
+        navController.navigate(Routes.TAREAS_LISTADO)
     }
 
     Scaffold(

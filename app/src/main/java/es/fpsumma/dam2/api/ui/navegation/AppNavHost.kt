@@ -11,10 +11,12 @@ import es.fpsumma.dam2.api.ui.screen.tareas.ListadoTareasScreen
 import es.fpsumma.dam2.api.ui.screen.tareas.NuevaTareaScreen
 import es.fpsumma.dam2.api.viewmodel.TareasViewModel
 
+
+
 @Composable
 fun AppNavHost(navController: NavHostController, tareasViewModel: TareasViewModel) {
-    NavHost(navController = navController, startDestination = Routes.TAREA_LISTADO) {
-        composable(Routes.TAREA_LISTADO) { ListadoTareasScreen(navController, tareasViewModel) }
+    NavHost(navController = navController, startDestination = Routes.TAREAS_LISTADO) {
+        composable(Routes.TAREAS_LISTADO) { ListadoTareasScreen(navController, tareasViewModel) } //
         composable(Routes.TAREA_ADD) { NuevaTareaScreen(navController, tareasViewModel) }
         composable(
             route = Routes.TAREA_VIEW,
@@ -26,6 +28,5 @@ fun AppNavHost(navController: NavHostController, tareasViewModel: TareasViewMode
                 tareasViewModel
             )
         }
-
     }
 }

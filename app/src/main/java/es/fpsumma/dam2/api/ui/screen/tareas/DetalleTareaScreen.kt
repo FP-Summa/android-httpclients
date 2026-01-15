@@ -61,7 +61,7 @@ fun DetalleTareaScreen(
 
     fun handleUpdateTarea() {
         vm.updateTarea(id, titulo, descripcion)
-        navController.navigate(Routes.TAREA_LISTADO)
+        navController.navigate(Routes.TAREAS_LISTADO)
     }
 
     Scaffold(
